@@ -1,5 +1,5 @@
 <template>
-    
+    <div>WORLD</div>
 </template>
 
 <script>
