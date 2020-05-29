@@ -4,18 +4,13 @@
  *
  * Everything here is compiled into one CSS and on JS file.
  */
-
-// Everything in this scss file is namespaced within .wj-widgets.
-// It should not pollute the global namespace.
 // import '@/styles/main.scss';
 
 // Setup JS to configure Vue.  Used to keep dev and prod in sync.
 import '@/setup';
-
 import Vue from 'vue';
 import * as widgets from '@/widgets'; 
-import store from '@/store';
-
+// import store from '@/store';
 
 /**
  *
@@ -25,7 +20,7 @@ import store from '@/store';
  */
 
 const initializeWidget = (widget, el, props = {}) => new Vue({
-    store,
+    // store,
     el,
     components: { [widget]: widgets[widget] },
     render(h) {
@@ -34,6 +29,6 @@ const initializeWidget = (widget, el, props = {}) => new Vue({
 });
 
 export {
-    store,
+    // store,
     initializeWidget,
 };

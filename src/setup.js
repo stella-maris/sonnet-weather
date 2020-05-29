@@ -7,6 +7,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import Vuelidate from 'vuelidate';
+import VMdDateRangePicker from "v-md-date-range-picker";
 
 Vue.use(Vuex);
 Vue.use(Vuelidate);
+Vue.use(VMdDateRangePicker);
